@@ -1,6 +1,6 @@
 # 🚀 Website-summarizer
 
-**Website-summarizer** is a high-performance web utility designed to transform complex, long-form articles into concise, actionable 3-point AI summaries. Leveraging Google’s Gemini 1.5 Flash, it allows users to instantly extract core insights and curate a persistent local library of content.
+**Website-summarizer** is a high-performance web utility designed to transform complex, long-form articles into concise, actionable 3-point AI summaries. Leveraging Google’s Gemini 2.5 Flash, it allows users to instantly extract core insights and curate a persistent local library of content.
 
 ## 🛠️ Local Installation & Setup
 
