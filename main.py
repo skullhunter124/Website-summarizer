@@ -11,7 +11,7 @@ c.execute('CREATE TABLE IF NOT EXISTS library (id INTEGER PRIMARY KEY, title TEX
 conn.commit()
 
 
-# Replace with your actual API key from Google Cloud Console
+# Replace with your actual API key from Google Cloud Console and insert it here. You can create an API key in the Google Cloud Console under the "APIs & Services" section. Make sure to enable the Generative AI API for your project and restrict the key as needed for security.
 API_KEY = "YOUR API KEY HERE" 
 genai.configure(api_key=API_KEY)
 model = genai.GenerativeModel('gemini-2.5-flash')
