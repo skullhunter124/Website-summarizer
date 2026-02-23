@@ -11,7 +11,7 @@ conn.commit()
 
 # --- GEMINI SETUP ---
 # Fix: Using 'gemini-1.5-flash' instead of the deprecated 'gemini-pro'
-API_KEY = "AIzaSyCYxkm7aDNabzOsA20-ujEXNIm3ejxFyrw" 
+API_KEY = "API KEY HERE" 
 genai.configure(api_key=API_KEY)
 model = genai.GenerativeModel('gemini-1.5-flash')
 
