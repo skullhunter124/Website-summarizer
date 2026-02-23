@@ -1,29 +1,51 @@
-# Website-summarizer
+🚀 Website-summarizer
+Website-summarizer is a high-performance web utility that transforms complex, long-form articles into concise, 3-point AI summaries. By integrating Google's Gemini 1.5 Flash, it allows users to extract core insights instantly and curate a persistent local library of summarized content.
 
+🛠️ Local Installation & Setup
+Follow these steps to configure and execute the application on your local machine.
 
-This is a web tool that turns long, cluttered articles into clean, 3-point AI summaries. It saves your summaries into a local "Library" so you can keep track of everything you've read.
+1. Prerequisites
+Python 3.9+: Ensure Python is installed and configured in your system environment.
 
-## 🛠️ How to Run Locally
+Google Gemini API Key:
 
-Follow these steps to get the app running on your computer.
+Log in to Google AI Studio.
 
-### 1. Prerequisites
-Make sure you have **Python 3.9+** installed. You will also need a **Gemini API Key** (Free) from [Google AI Studio](https://aistudio.google.com/).
-Log in to your google account.
-In the bottom left corner you will see Get API key. Then once pressed you will see in the right upper corner a "Create API key" press that, name your key and project. After that copy the API key and paste it in the code.
+Select "Get API key" in the bottom-left navigation menu.
 
-### 2. Install Dependencies
-Open your terminal in the project folder and run:
+Click "Create API key" in the top-right corner.
+
+Generate and copy your unique API key.
+
+2. Install Dependencies
+Initialize your environment by installing the necessary libraries via your terminal:
+
+Bash
 pip install streamlit google-generativeai newspaper3k lxml_html_clean
+3. API Configuration
+Open main.py in your code editor.
 
-### 3. Setup your API KEY
-Open main.py and find the line 15, where it says "YOUR API KEY HERE" and replace it with your actual key from Google AI Studio.
+Navigate to Line 15 and locate the variable: API_KEY = "YOUR_API_KEY_HERE".
 
-### 4. Start the app
+Replace the placeholder with your actual API key.
+
+4. Start the Application
+Execute the following command to launch the local web server:
+
+Bash
 python -m streamlit run main.py
+The interface will automatically populate in your default web browser.
 
+🔒 Data Privacy & Storage
+Website-summarizer is built with a "local-first" philosophy:
 
+Local Database: All summarized content is stored in a SQLite database file named summaries.db located within your project folder.
 
+Privacy: Your data never leaves your machine, and no external servers (aside from Google's API for the summarization process) have access to your saved library.
 
-## Closing/stoping
-Go in the terminal where you opened this and press CTRL + C 
+⏹️ Stopping the Application
+To terminate the local server session:
+
+Return to the terminal window where the app is running.
+
+Press CTRL + C to stop the process.
